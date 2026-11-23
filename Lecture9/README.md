@@ -1,4 +1,4 @@
-# Assignment 3: Hardware Timer ISR to FreeRTOS Queue
+# Assignment 9: Hardware Timer ISR to FreeRTOS Queue
 
 Used an ESP32-S3-DevKitC-1 v1.1 over USB on COM4 (no external wiring needed) in Arduino IDE 2.x at 115200 baud. Set up a 1 MHz hardware timer with an auto-reload alarm every 100,000 ticks (100 ms), sending an incrementing `uint32_t` sequence number from the ISR into a 4-slot FreeRTOS queue (`xQueueSendFromISR`).
 
