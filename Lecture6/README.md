@@ -1,4 +1,4 @@
-# Assignment 4: Passing Task Parameters Safely with a Mutex
+# Assignment 6: Passing Task Parameters Safely with a Mutex
 
 Used an ESP32-S3-DevKitC-1 v1.1 over USB on COM4 in Arduino IDE 2.x at 115200 baud with the onboard RGB LED on GPIO 38 (blue, brightness 45). Updated `delay_arg` in `setup()` to `int` to match `*(int *)parameters` in `blinkLED`, and added a FreeRTOS mutex so `setup()` waits until `blinkLED` copies the parameter before finishing.
 
